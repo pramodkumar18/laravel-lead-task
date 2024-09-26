@@ -13,7 +13,7 @@ class LeadSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        for ($i = 0; $i < 1000; $i++) {
+        for ($i = 0; $i < 100000; $i++) {
             Lead::create([
                 'title' => $faker->sentence,
                 'contact' => $faker->phoneNumber,
